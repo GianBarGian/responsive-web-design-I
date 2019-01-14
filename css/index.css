@@ -311,7 +311,12 @@ address a {
         padding: 40px 0;
     }
 
-    /* services*/
+    .services-page header h1 {
+        text-align: center;
+    }
 
+    .services-page .box {
+        width: 100%;
+    }
     
 }
