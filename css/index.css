@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	max-width: 900px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 nav {
@@ -181,7 +181,7 @@ address a {
 
 .box {
 	background-color: rgba(120, 164, 194, 0.61);
-	width: 430px;
+	width: 48%;
 	border: 1px solid black;
 	margin-bottom: 20px;
 }
@@ -253,6 +253,27 @@ address a {
     .header-img {
         display: none;
     }    
+
+    .services-page header {
+        padding-bottom: 15px;
+    }
+
+    .services-header-img {
+        width: 100%;
+    }
+
+    .services-page .services-info-img {
+        display: none;
+    }
+
+    .services-page ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-page li {
+        width: 48%;  
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -289,4 +310,8 @@ address a {
     .middle {
         padding: 40px 0;
     }
+
+    /* services*/
+
+    
 }
