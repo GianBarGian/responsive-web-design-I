@@ -65,8 +65,8 @@ h1, h2, h3, h4, h5 {
 
 
 .container {
-	width: 900px;
-	margin: auto;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 nav {
@@ -76,7 +76,7 @@ nav {
 	padding: 50px 0;
 }
 
-.nav-items {
+nav div {
 	width: 550px;
 	display: flex;
 	justify-content: space-between;	
@@ -181,7 +181,7 @@ address a {
 
 .box {
 	background-color: rgba(120, 164, 194, 0.61);
-	width: 430px;
+	width: 48%;
 	border: 1px solid black;
 	margin-bottom: 20px;
 }
@@ -223,4 +223,100 @@ address a {
 	list-style-type: square;
 	list-style-position: inside;
 	line-height: 2;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 92%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    nav .logo {
+        padding-bottom: 20px;
+    }
+
+    nav div {
+        width: 100%;
+        
+    }
+    
+    header {
+        padding-bottom: 80px;
+    }
+
+    .header-img {
+        display: none;
+    }    
+
+    .services-page header {
+        padding-bottom: 15px;
+    }
+
+    .services-header-img {
+        width: 100%;
+    }
+
+    .services-page .services-info-img {
+        display: none;
+    }
+
+    .services-page ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-page li {
+        width: 48%;  
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    nav div {
+        flex-direction: column;
+    }
+
+    nav div a {
+        width: 108.7%;
+        font-size: 2rem;
+        border-top:1px solid gray;
+        text-align: center;
+        padding-bottom:  10px;
+        color: gray;
+    }
+
+    nav div a:last-child {
+        border-bottom: 1px solid gray;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .top div:first-child {
+        padding-bottom: 40px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .middle {
+        padding: 40px 0;
+    }
+
+    .services-page header h1 {
+        text-align: center;
+    }
+
+    .services-page .box {
+        width: 100%;
+    }
+    
 }
