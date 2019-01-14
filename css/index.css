@@ -234,7 +234,7 @@ address a {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 15px;
     }
 
     nav .logo {
@@ -252,11 +252,41 @@ address a {
 
     .header-img {
         display: none;
-    } 
-
-    
+    }    
 }
 
 @media screen and (max-width: 500px) {
     
+    nav div {
+        flex-direction: column;
+    }
+
+    nav div a {
+        width: 108.7%;
+        font-size: 2rem;
+        border-top:1px solid gray;
+        text-align: center;
+        padding-bottom:  10px;
+        color: gray;
+    }
+
+    nav div a:last-child {
+        border-bottom: 1px solid gray;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .top div:first-child {
+        padding-bottom: 40px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .middle {
+        padding: 40px 0;
+    }
 }
