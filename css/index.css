@@ -76,7 +76,7 @@ nav {
 	padding: 50px 0;
 }
 
-.nav-items {
+nav div {
 	width: 550px;
 	display: flex;
 	justify-content: space-between;	
@@ -223,4 +223,40 @@ address a {
 	list-style-type: square;
 	list-style-position: inside;
 	line-height: 2;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 92%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    nav .logo {
+        padding-bottom: 20px;
+    }
+
+    nav div {
+        width: 100%;
+        
+    }
+    
+    header {
+        padding-bottom: 80px;
+    }
+
+    .header-img {
+        display: none;
+    } 
+
+    
+}
+
+@media screen and (max-width: 500px) {
+    
 }
